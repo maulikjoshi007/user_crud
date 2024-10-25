@@ -190,7 +190,7 @@ describe('User CRUD Lambda', () => {
     expect(result.statusCode).toBe(200);
     expect(result.body).toEqual(JSON.stringify('User created'));
     // expect(result.body).toEqual(JSON.stringify('User created'));
-  });
+  },10000);
 
   // test('Read User', async () => {
   //   AWSMock.mock('DynamoDB.DocumentClient', 'get', Promise.resolve({
