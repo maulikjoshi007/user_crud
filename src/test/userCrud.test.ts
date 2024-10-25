@@ -168,27 +168,24 @@ describe('User CRUD Lambda', () => {
     }));
 
 
-    // let payload = {
-    //   body:{
-        
-    //   "email":"testinguser2@gmail.com",
-    //   "password": "Admin@123",
-    //   "confirm_password": "Admin@123",
-    //   "first_name": "Testing",
-    //   "last_name": "User 2",
-    //   "gender": "MALE",
-    //   "mobile_no": "8976545768",
-    //   "date_of_birth": "2000-10-10"
-    //   } 
-    // }
+    let payload = {
+      "email":"testinguser2@gmail.com",
+      "password": "Admin@123",
+      "confirm_password": "Admin@123",
+      "first_name": "Testing",
+      "last_name": "User 2",
+      "gender": "MALE",
+      "mobile_no": "8976545768",
+      "date_of_birth": "2000-10-10"
+    }
     const event: Partial<APIGatewayProxyEvent> = {
       httpMethod: 'POST',
-      body: JSON.stringify({ userId: '123', name: 'John Doe' })
+      body: JSON.stringify(payload)
     };
-    const result = await handler(event as APIGatewayProxyEvent);
-    // expect(result.status).toBe("success");
-    expect(result.statusCode).toBe(200);
-    expect(result.body).toEqual(JSON.stringify('User created'));
+    const result:any = await handler(event as APIGatewayProxyEvent);
+    expect(result.status).toBe("success");
+    // expect(result.statusCode).toBe(200);
+    // expect(result.body).toEqual(JSON.stringify('User created'));
     // expect(result.body).toEqual(JSON.stringify('User created'));
   },10000);
 

@@ -24,7 +24,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
 const createUser = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   const data = JSON.parse(event.body || '{}');
   const params = {
-    TableName: 'Users',
+    TableName: 'ms_user',
     Item: data,
   };
 
@@ -39,7 +39,7 @@ const createUser = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyR
 const getUser = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   const userId = event.pathParameters?.userId;
   const params = {
-    TableName: 'Users',
+    TableName: 'ms_user',
     Key: { userId },
   };
 
