@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "dist",
+      "sourceMap": true,
+      "rootDir": "./src", 
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,                    
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "allowJs": true, // Allow JavaScript files
+      "types": ["jest", "node"], // Include Jest and Node.js types
+  },
+  "files": [
+      "./node_modules/@types/node/index.d.ts"
+  ],
+  "include": [
+      "src/**/**/**/**/*",
+  ],
+  "exclude": [
+      "node_modules",
+      "dist"
+  ]
+}

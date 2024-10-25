@@ -1,0 +1,24 @@
+{
+	"welcome_msg": "Welcome to Micro service of User CRUD...!",
+	"user": {
+		"user_profile_update_success": "User updated successfully",
+		"no_user_exist": "User does not exist with given credentials",
+		"gender_update": "You can not update the gender",
+		"user_exist": "User exist with given email address",
+		"email_verified_success": "Email has been verfied successfully",
+		"email_already_verified": "Email is already verified",
+		"delete_success": "User deleted successfully",
+		"mobile_number_not_exists": "This mobile number does not exsist",
+		"update_profile_success": "Profile details updated successfully",
+		"user_mobile_no_exist": "User exist with given mobile number"
+	},
+	"validation": {
+		"invalid_password": "Please enter valid password. It should be minimum 8 characters long, contain at least one special character, digit, small case and upper case character",
+		"not_match_password": "Password and Confirm Password must be same"
+	},
+	"email_can_not_be_sent": "email_can_not_be_sent",
+	"un_authorized": "un_authorized",
+	"invalid_password": "Your old password is incorrect",
+	"password_changed_successfully": "Your password has been changed successfully",
+	"validation_error": "Please check the validation error"
+}
