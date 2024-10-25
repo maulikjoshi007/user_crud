@@ -1,5 +1,3 @@
-# user_crud
-
 # DynamoDB User CRUD API
 
 ## Overview
