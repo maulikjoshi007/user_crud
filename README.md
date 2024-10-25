@@ -97,8 +97,10 @@ After deploying your Lambda function and API Gateway, you can interact with the 
     ```
 
 
-
 ## Scripts to Deploy Lambda Function
 ``` bash
  1. npm run build // For Create Build
  2. npm run package // For create zip file for uploading on lambda function
+
+## Postman Collection Attached
+  For Testing API shared the postman collection
